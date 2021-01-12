@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
+	"github.com/lazyledger/lazyledger-core/libs/cli"
 	yaml "gopkg.in/yaml.v2"
 )
 

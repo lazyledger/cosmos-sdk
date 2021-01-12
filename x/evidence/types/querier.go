@@ -1,7 +1,7 @@
 package types
 
 import (
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 
 	query "github.com/cosmos/cosmos-sdk/types/query"
 )

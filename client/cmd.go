@@ -7,8 +7,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-	"github.com/tendermint/tendermint/libs/cli"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	"github.com/lazyledger/lazyledger-core/libs/cli"
+	rpchttp "github.com/lazyledger/lazyledger-core/rpc/client/http"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"

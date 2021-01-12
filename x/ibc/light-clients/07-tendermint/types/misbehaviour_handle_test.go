@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
 	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"

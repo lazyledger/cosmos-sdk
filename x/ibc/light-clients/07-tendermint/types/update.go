@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/tendermint/tendermint/light"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/light"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"

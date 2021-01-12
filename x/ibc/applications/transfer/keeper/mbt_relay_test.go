@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

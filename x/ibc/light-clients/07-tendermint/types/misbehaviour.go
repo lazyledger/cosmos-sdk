@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"time"
 
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"

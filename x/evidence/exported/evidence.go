@@ -2,7 +2,7 @@ package exported
 
 import (
 	"github.com/gogo/protobuf/proto"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

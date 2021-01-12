@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	"github.com/lazyledger/lazyledger-core/libs/log"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/codec/types"

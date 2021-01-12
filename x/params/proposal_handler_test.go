@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/libs/log"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/codec"

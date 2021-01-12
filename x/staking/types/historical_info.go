@@ -4,7 +4,7 @@ import (
 	"sort"
 
 	"github.com/gogo/protobuf/proto"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	cryptoenc "github.com/lazyledger/lazyledger-core/crypto/encoding"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 )
 
 type mockValidator struct {

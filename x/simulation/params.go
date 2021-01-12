@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/simulation"

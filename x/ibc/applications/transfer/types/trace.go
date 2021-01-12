@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

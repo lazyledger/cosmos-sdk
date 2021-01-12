@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/suite"
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"

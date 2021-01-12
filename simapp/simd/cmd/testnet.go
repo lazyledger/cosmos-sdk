@@ -11,11 +11,11 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	tmconfig "github.com/tendermint/tendermint/config"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	tmconfig "github.com/lazyledger/lazyledger-core/config"
+	tmos "github.com/lazyledger/lazyledger-core/libs/os"
+	tmrand "github.com/lazyledger/lazyledger-core/libs/rand"
+	"github.com/lazyledger/lazyledger-core/types"
+	tmtime "github.com/lazyledger/lazyledger-core/types/time"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 	"gopkg.in/yaml.v2"
 
 	"github.com/cosmos/cosmos-sdk/codec"

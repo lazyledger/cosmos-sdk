@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/tendermint/crypto/bcrypt"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/armor"
-	"github.com/tendermint/tendermint/crypto/xsalsa20symmetric"
+	"github.com/lazyledger/lazyledger-core/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto/armor"
+	"github.com/lazyledger/lazyledger-core/crypto/xsalsa20symmetric"
 
 	"github.com/cosmos/cosmos-sdk/codec/legacy"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

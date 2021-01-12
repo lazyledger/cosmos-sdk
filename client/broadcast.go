@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/mempool"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	"github.com/lazyledger/lazyledger-core/mempool"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 

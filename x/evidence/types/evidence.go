@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 	"gopkg.in/yaml.v2"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

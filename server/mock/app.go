@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/types"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/lazyledger/lazyledger-core/libs/log"
 
 	bam "github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/codec"

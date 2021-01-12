@@ -18,8 +18,8 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	tmcfg "github.com/tendermint/tendermint/config"
-	tmlog "github.com/tendermint/tendermint/libs/log"
+	tmcfg "github.com/lazyledger/lazyledger-core/config"
+	tmlog "github.com/lazyledger/lazyledger-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"

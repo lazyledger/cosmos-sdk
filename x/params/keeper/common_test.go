@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/lazyledger/lazyledger-core/libs/log"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/simapp"

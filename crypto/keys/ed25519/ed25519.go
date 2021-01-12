@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/lazyledger/lazyledger-core/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

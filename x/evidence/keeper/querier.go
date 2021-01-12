@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
 	"github.com/cosmos/cosmos-sdk/x/evidence/types"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 )
 
 func NewQuerier(k Keeper, legacyQuerierCdc *codec.LegacyAmino) sdk.Querier {

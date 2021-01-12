@@ -11,8 +11,8 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto"
-	tmsecp256k1 "github.com/tendermint/tendermint/crypto/secp256k1"
+	"github.com/lazyledger/lazyledger-core/crypto"
+	tmsecp256k1 "github.com/lazyledger/lazyledger-core/crypto/secp256k1"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"

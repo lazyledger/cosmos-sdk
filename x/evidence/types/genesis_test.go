@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

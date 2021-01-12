@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server"

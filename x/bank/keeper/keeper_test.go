@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
+	tmtime "github.com/lazyledger/lazyledger-core/types/time"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/simapp"

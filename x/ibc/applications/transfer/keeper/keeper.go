@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/libs/log"
+	tmbytes "github.com/lazyledger/lazyledger-core/libs/bytes"
+	"github.com/lazyledger/lazyledger-core/libs/log"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store/prefix"

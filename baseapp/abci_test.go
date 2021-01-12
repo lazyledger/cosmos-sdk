@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmprototypes "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmprototypes "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

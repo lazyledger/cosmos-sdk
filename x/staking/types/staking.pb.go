@@ -18,7 +18,7 @@ import (
 	_ "github.com/golang/protobuf/ptypes/duration"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
 	_ "github.com/regen-network/cosmos-proto"
-	types "github.com/tendermint/tendermint/proto/tendermint/types"
+	types "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	io "io"
 	io_ioutil "io/ioutil"
 	math "math"

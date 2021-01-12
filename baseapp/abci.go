@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	"google.golang.org/grpc/codes"
 	grpcstatus "google.golang.org/grpc/status"
 

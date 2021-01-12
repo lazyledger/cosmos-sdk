@@ -11,7 +11,7 @@ import (
 	keep "github.com/cosmos/cosmos-sdk/x/mint/keeper"
 	"github.com/cosmos/cosmos-sdk/x/mint/types"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 )
 
 func TestNewQuerier(t *testing.T) {

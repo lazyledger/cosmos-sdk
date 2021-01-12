@@ -14,7 +14,7 @@ import (
 	protoio "github.com/gogo/protobuf/io"
 	gogotypes "github.com/gogo/protobuf/types"
 	"github.com/pkg/errors"
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/snapshots"

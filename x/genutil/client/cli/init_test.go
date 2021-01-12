@@ -11,9 +11,9 @@ import (
 
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
-	abci_server "github.com/tendermint/tendermint/abci/server"
-	"github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/libs/log"
+	abci_server "github.com/lazyledger/lazyledger-core/abci/server"
+	"github.com/lazyledger/lazyledger-core/libs/cli"
+	"github.com/lazyledger/lazyledger-core/libs/log"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

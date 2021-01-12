@@ -11,8 +11,8 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	"github.com/lazyledger/lazyledger-core/libs/log"
+	tmrpcserver "github.com/lazyledger/lazyledger-core/rpc/jsonrpc/server"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server/config"

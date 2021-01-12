@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	keep "github.com/cosmos/cosmos-sdk/x/auth/keeper"

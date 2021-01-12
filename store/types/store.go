@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmstrings "github.com/tendermint/tendermint/libs/strings"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmstrings "github.com/lazyledger/lazyledger-core/libs/strings"
 	dbm "github.com/tendermint/tm-db"
 
 	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"

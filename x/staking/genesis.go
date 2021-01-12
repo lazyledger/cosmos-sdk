@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"

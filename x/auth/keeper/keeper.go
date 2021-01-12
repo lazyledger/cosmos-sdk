@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	gogotypes "github.com/gogo/protobuf/types"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/lazyledger/lazyledger-core/libs/log"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

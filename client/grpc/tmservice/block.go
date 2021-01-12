@@ -3,7 +3,7 @@ package tmservice
 import (
 	"context"
 
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	ctypes "github.com/lazyledger/lazyledger-core/rpc/core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 )

@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/p2p"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/lazyledger/lazyledger-core/libs/bytes"
+	"github.com/lazyledger/lazyledger-core/p2p"
+	ctypes "github.com/lazyledger/lazyledger-core/rpc/core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

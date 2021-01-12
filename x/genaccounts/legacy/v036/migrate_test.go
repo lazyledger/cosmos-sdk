@@ -3,7 +3,7 @@ package v036
 import (
 	"testing"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	"github.com/cosmos/cosmos-sdk/types"

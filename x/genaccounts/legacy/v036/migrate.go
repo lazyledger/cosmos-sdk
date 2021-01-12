@@ -11,7 +11,7 @@ import (
 	v034gov "github.com/cosmos/cosmos-sdk/x/gov/legacy/v034"
 	v034staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v034"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/lazyledger/lazyledger-core/crypto"
 )
 
 const (

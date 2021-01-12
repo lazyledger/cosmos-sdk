@@ -11,7 +11,7 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_tendermint_tendermint_libs_bytes "github.com/tendermint/tendermint/libs/bytes"
+	github_com_tendermint_tendermint_libs_bytes "github.com/lazyledger/lazyledger-core/libs/bytes"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -35,7 +35,7 @@ const _ = proto.GoGoProtoPackageIsVersion3 // please upgrade the proto package
 // QueryEvidenceRequest is the request type for the Query/Evidence RPC method.
 type QueryEvidenceRequest struct {
 	// evidence_hash defines the hash of the requested evidence.
-	EvidenceHash github_com_tendermint_tendermint_libs_bytes.HexBytes `protobuf:"bytes,1,opt,name=evidence_hash,json=evidenceHash,proto3,casttype=github.com/tendermint/tendermint/libs/bytes.HexBytes" json:"evidence_hash,omitempty"`
+	EvidenceHash github_com_tendermint_tendermint_libs_bytes.HexBytes `protobuf:"bytes,1,opt,name=evidence_hash,json=evidenceHash,proto3,casttype=github.com/lazyledger/lazyledger-core/libs/bytes.HexBytes" json:"evidence_hash,omitempty"`
 }
 
 func (m *QueryEvidenceRequest) Reset()         { *m = QueryEvidenceRequest{} }

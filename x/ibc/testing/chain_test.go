@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
 	"github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"

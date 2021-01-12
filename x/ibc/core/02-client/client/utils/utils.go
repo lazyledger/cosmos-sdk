@@ -3,7 +3,7 @@ package utils
 import (
 	"context"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 

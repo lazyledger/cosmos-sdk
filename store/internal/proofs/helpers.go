@@ -3,8 +3,8 @@ package proofs
 import (
 	"sort"
 
-	"github.com/tendermint/tendermint/libs/rand"
-	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	"github.com/lazyledger/lazyledger-core/libs/rand"
+	tmcrypto "github.com/lazyledger/lazyledger-core/proto/tendermint/crypto"
 
 	sdkmaps "github.com/cosmos/cosmos-sdk/store/internal/maps"
 )

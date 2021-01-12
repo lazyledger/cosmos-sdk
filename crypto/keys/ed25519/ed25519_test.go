@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto"
-	tmed25519 "github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/lazyledger/lazyledger-core/crypto"
+	tmed25519 "github.com/lazyledger/lazyledger-core/crypto/ed25519"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	ed25519 "github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"

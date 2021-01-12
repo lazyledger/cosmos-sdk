@@ -2,7 +2,7 @@ package types
 
 import (
 	proto "github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
 	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"

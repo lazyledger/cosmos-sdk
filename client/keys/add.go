@@ -9,7 +9,7 @@ import (
 
 	bip39 "github.com/cosmos/go-bip39"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
+	"github.com/lazyledger/lazyledger-core/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

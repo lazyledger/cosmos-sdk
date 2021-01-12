@@ -38,7 +38,7 @@ type restoreDone struct {
 //
 // 1) In the future, ABCI should support streaming. Consider e.g. InitChain during chain
 //    upgrades, which currently passes the entire chain state as an in-memory byte slice.
-//    https://github.com/tendermint/tendermint/issues/5184
+//    https://github.com/lazyledger/lazyledger-core/issues/5184
 //
 // 2) io.ReadCloser streams automatically propagate IO errors, and can pass arbitrary
 //    errors via io.Pipe.CloseWithError().

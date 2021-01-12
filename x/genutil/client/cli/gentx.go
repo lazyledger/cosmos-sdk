@@ -12,8 +12,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmos "github.com/lazyledger/lazyledger-core/libs/os"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

@@ -15,7 +15,7 @@ import (
 	mux "github.com/gorilla/mux"
 	runtime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	cobra "github.com/spf13/cobra"
-	types1 "github.com/tendermint/tendermint/abci/types"
+	types1 "github.com/lazyledger/lazyledger-core/abci/types"
 	reflect "reflect"
 )
 

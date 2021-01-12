@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmprotoversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	tmtypes "github.com/tendermint/tendermint/types"
-	tmversion "github.com/tendermint/tendermint/version"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
+	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
+	tmprotoversion "github.com/lazyledger/lazyledger-core/proto/tendermint/version"
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	tmversion "github.com/lazyledger/lazyledger-core/version"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

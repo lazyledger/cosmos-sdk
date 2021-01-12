@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	"github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	tversion "github.com/tendermint/tendermint/version"
+	tcmd "github.com/lazyledger/lazyledger-core/cmd/tendermint/commands"
+	"github.com/lazyledger/lazyledger-core/libs/cli"
+	"github.com/lazyledger/lazyledger-core/p2p"
+	pvm "github.com/lazyledger/lazyledger-core/privval"
+	tversion "github.com/lazyledger/lazyledger-core/version"
 	yaml "gopkg.in/yaml.v2"
 
 	"github.com/cosmos/cosmos-sdk/codec"

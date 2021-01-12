@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/config"
+	"github.com/lazyledger/lazyledger-core/config"
 )
 
 func TestExportGenesisFileWithTime(t *testing.T) {

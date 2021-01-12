@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
+	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
 
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
