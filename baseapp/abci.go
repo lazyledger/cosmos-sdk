@@ -376,6 +376,18 @@ func (app *BaseApp) snapshot(height int64) {
 	}
 }
 
+// PreprocessTxs fullfills the lazyledger-core version of the ACBI interface,
+// also proposed here https://github.com/tendermint/spec/issues/194. It allows
+// for arbitrary processing steps
+// todo(evan): update documentation after implemented
+func (app *BaseApp) PreprocessTxs(txs abci.RequestPreprocessTxs) abci.ResponsePreprocessTxs {
+	// TODO(evan): fully implement
+	// pass through txs w/o processing for now
+	return abci.ResponsePreprocessTxs{
+		Txs: txs.Txs,
+	}
+}
+
 // Query implements the ABCI interface. It delegates to CommitMultiStore if it
 // implements Queryable.
 func (app *BaseApp) Query(req abci.RequestQuery) (res abci.ResponseQuery) {
