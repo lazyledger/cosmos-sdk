@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/spf13/cobra"
 	tcmd "github.com/lazyledger/lazyledger-core/cmd/tendermint/commands"
 	"github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/lazyledger/lazyledger-core/p2p"
 	pvm "github.com/lazyledger/lazyledger-core/privval"
 	tversion "github.com/lazyledger/lazyledger-core/version"
+	"github.com/spf13/cobra"
 	yaml "gopkg.in/yaml.v2"
 
 	"github.com/cosmos/cosmos-sdk/codec"
@@ -33,7 +33,7 @@ func ShowNodeIDCmd() *cobra.Command {
 				return err
 			}
 
-			fmt.Println(nodeKey.ID())
+			fmt.Println(nodeKey.ID)
 			return nil
 		},
 	}
@@ -48,7 +48,10 @@ func ShowValidatorCmd() *cobra.Command {
 			serverCtx := GetServerContextFromCmd(cmd)
 			cfg := serverCtx.Config
 
-			privValidator := pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile())
+			privValidator, err := pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile())
+			if err != nil {
+				return err
+			}
 			valPubKey, err := privValidator.GetPubKey()
 			if err != nil {
 				return err
@@ -86,7 +89,11 @@ func ShowAddressCmd() *cobra.Command {
 			serverCtx := GetServerContextFromCmd(cmd)
 			cfg := serverCtx.Config
 
-			privValidator := pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile())
+			privValidator, err := pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile())
+			if err != nil {
+				return err
+			}
+
 			valConsAddr := (sdk.ConsAddress)(privValidator.GetAddress())
 
 			output, _ := cmd.Flags().GetString(cli.OutputFlag)

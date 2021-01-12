@@ -8,7 +8,6 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/spf13/cobra"
 	"github.com/lazyledger/lazyledger-core/abci/server"
 	tcmd "github.com/lazyledger/lazyledger-core/cmd/tendermint/commands"
 	tmos "github.com/lazyledger/lazyledger-core/libs/os"
@@ -17,6 +16,7 @@ import (
 	pvm "github.com/lazyledger/lazyledger-core/privval"
 	"github.com/lazyledger/lazyledger-core/proxy"
 	"github.com/lazyledger/lazyledger-core/rpc/client/local"
+	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 
 	"github.com/cosmos/cosmos-sdk/client"
@@ -240,10 +240,15 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 		return err
 	}
 
+	pvFile, err := pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile())
+	if err != nil {
+		return err
+	}
+
 	genDocProvider := node.DefaultGenesisDocProviderFunc(cfg)
 	tmNode, err := node.NewNode(
 		cfg,
-		pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile()),
+		pvFile,
 		nodeKey,
 		proxy.NewLocalClientCreator(app),
 		genDocProvider,

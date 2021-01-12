@@ -2,10 +2,12 @@ package config
 
 import (
 	"bytes"
+	"fmt"
+	"io/ioutil"
+	"os"
 	"text/template"
 
 	"github.com/spf13/viper"
-	tmos "github.com/lazyledger/lazyledger-core/libs/os"
 )
 
 const defaultConfigTemplate = `# This is a TOML config file.
@@ -193,5 +195,12 @@ func WriteConfigFile(configFilePath string, config *Config) {
 		panic(err)
 	}
 
-	tmos.MustWriteFile(configFilePath, buffer.Bytes(), 0644)
+	mustWriteFile(configFilePath, buffer.Bytes(), 0644)
+}
+
+func mustWriteFile(filePath string, contents []byte, mode os.FileMode) {
+	if err := ioutil.WriteFile(filePath, contents, mode); err != nil {
+		fmt.Printf("failed to write file: %v\n", err)
+		os.Exit(1)
+	}
 }

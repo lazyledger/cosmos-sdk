@@ -2,6 +2,7 @@ package network
 
 import (
 	"encoding/json"
+	"io/ioutil"
 	"path/filepath"
 	"time"
 
@@ -34,10 +35,15 @@ func startInProcess(cfg Config, val *Validator) error {
 
 	app := cfg.AppConstructor(*val)
 
+	pvFile, err := pvm.LoadOrGenFilePV(tmCfg.PrivValidatorKeyFile(), tmCfg.PrivValidatorStateFile())
+	if err != nil {
+		return err
+	}
+
 	genDocProvider := node.DefaultGenesisDocProviderFunc(tmCfg)
 	tmNode, err := node.NewNode(
 		tmCfg,
-		pvm.LoadOrGenFilePV(tmCfg.PrivValidatorKeyFile(), tmCfg.PrivValidatorStateFile()),
+		pvFile,
 		nodeKey,
 		proxy.NewLocalClientCreator(app),
 		genDocProvider,
@@ -190,7 +196,7 @@ func writeFile(name string, dir string, contents []byte) error {
 		return err
 	}
 
-	err = tmos.WriteFile(file, contents, 0644)
+	err = ioutil.WriteFile(file, contents, 0644)
 	if err != nil {
 		return err
 	}
