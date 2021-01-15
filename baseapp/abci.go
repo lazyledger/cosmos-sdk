@@ -378,7 +378,7 @@ func (app *BaseApp) snapshot(height int64) {
 
 // PreprocessTxs fullfills the lazyledger-core version of the ACBI interface,
 // also proposed here https://github.com/tendermint/spec/issues/194. It allows
-// for arbitrary processing steps
+// for arbitrary processing steps before transaction data is included in the block.
 // todo(evan): update documentation after implemented
 func (app *BaseApp) PreprocessTxs(txs abci.RequestPreprocessTxs) abci.ResponsePreprocessTxs {
 	// TODO(evan): fully implement
