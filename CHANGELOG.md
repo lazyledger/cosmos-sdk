@@ -132,6 +132,7 @@ sure you are aware of any relevant breaking changes.
   * (types) [\#5533](https://github.com/cosmos/cosmos-sdk/pull/5533) Refactored `AppModuleBasic` and `AppModuleGenesis`
   to now accept a `codec.JSONMarshaler` for modular serialization of genesis state.
   * (types/rest) [\#5779](https://github.com/cosmos/cosmos-sdk/pull/5779) Drop unused Parse{Int64OrReturnBadRequest,QueryParamBool}() functions.
+  * [\#2](https://github.com/lazyledger/cosmos-sdk/issues/2) Add new abci method `PreprocessTxs` and remove `SetOption`.
 * __Modules__
   * (modules) [\#7243](https://github.com/cosmos/cosmos-sdk/pull/7243) Rename `RegisterCodec` to `RegisterLegacyAminoCodec` and `codec.New()` is now renamed to `codec.NewLegacyAmino()`
   * (modules) [\#6564](https://github.com/cosmos/cosmos-sdk/pull/6564) Constant `DefaultParamspace` is removed from all modules, use ModuleName instead.
@@ -192,8 +193,8 @@ sure you are aware of any relevant breaking changes.
   * (x/slashing) [\#6212](https://github.com/cosmos/cosmos-sdk/pull/6212) Remove `Get*` prefixes from key construction functions
   * (server) [\#6079](https://github.com/cosmos/cosmos-sdk/pull/6079) Remove `UpgradeOldPrivValFile` (deprecated in Tendermint Core v0.28).
   * [\#5719](https://github.com/cosmos/cosmos-sdk/pull/5719) Bump Go requirement to 1.14+
-    
-
+  
+  
 ### State Machine Breaking
 
 * __General__
