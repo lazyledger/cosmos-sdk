@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
+	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/otiai10/copy"
 	"github.com/stretchr/testify/assert"
-	"github.com/lazyledger/lazyledger-core/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

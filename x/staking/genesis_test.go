@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	abci "github.com/lazyledger/lazyledger-core/abci/types"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"

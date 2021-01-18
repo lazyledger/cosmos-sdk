@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/stretchr/testify/suite"
 	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

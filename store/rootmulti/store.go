@@ -13,8 +13,8 @@ import (
 	iavltree "github.com/cosmos/iavl"
 	protoio "github.com/gogo/protobuf/io"
 	gogotypes "github.com/gogo/protobuf/types"
-	"github.com/pkg/errors"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/pkg/errors"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/snapshots"

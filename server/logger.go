@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/rs/zerolog"
 	tmlog "github.com/lazyledger/lazyledger-core/libs/log"
+	"github.com/rs/zerolog"
 )
 
 var _ tmlog.Logger = (*ZeroLogWrapper)(nil)

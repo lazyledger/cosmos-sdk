@@ -7,10 +7,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/spf13/cobra"
 	tmjson "github.com/lazyledger/lazyledger-core/libs/json"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/server/types"

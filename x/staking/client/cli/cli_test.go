@@ -9,10 +9,10 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/stretchr/testify/suite"
 	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/lazyledger/lazyledger-core/proto/tendermint/crypto"
 	"github.com/lazyledger/lazyledger-core/rpc/client/http"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"

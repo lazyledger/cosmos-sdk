@@ -3,9 +3,9 @@ package mock_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	"github.com/stretchr/testify/require"
 
 	"github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"
 )

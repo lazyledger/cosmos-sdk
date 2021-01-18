@@ -3,10 +3,10 @@ package mock
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	"github.com/lazyledger/lazyledger-core/types"
+	"github.com/stretchr/testify/require"
 )
 
 // TestInitApp makes sure we can initialize this thing without an error

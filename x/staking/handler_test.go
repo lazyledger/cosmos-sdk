@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 
 	"github.com/golang/protobuf/proto"
 

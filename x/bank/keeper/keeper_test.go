@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/suite"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	tmtime "github.com/lazyledger/lazyledger-core/types/time"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/simapp"

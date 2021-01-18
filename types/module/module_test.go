@@ -9,9 +9,9 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/gorilla/mux"
+	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
-	abci "github.com/lazyledger/lazyledger-core/abci/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

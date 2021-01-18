@@ -3,10 +3,10 @@ package cmd
 import (
 	"context"
 
-	"github.com/rs/zerolog"
-	"github.com/spf13/cobra"
 	tmcfg "github.com/lazyledger/lazyledger-core/config"
 	tmcli "github.com/lazyledger/lazyledger-core/libs/cli"
+	"github.com/rs/zerolog"
+	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

@@ -6,9 +6,9 @@ import (
 	"sort"
 	"time"
 
+	tmjson "github.com/lazyledger/lazyledger-core/libs/json"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	tmjson "github.com/lazyledger/lazyledger-core/libs/json"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

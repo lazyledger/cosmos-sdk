@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	gogogrpc "github.com/gogo/protobuf/grpc"
-	"github.com/spf13/cobra"
 	"github.com/lazyledger/lazyledger-core/libs/cli"
+	"github.com/spf13/cobra"
 	grpc "google.golang.org/grpc"
 
 	"github.com/cosmos/cosmos-sdk/client"

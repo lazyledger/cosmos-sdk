@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/stretchr/testify/suite"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
+	"github.com/stretchr/testify/suite"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	testdata "github.com/cosmos/cosmos-sdk/testutil/testdata"

@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
 	abci "github.com/lazyledger/lazyledger-core/abci/types"
 	"github.com/lazyledger/lazyledger-core/crypto/tmhash"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
 	tmprotoversion "github.com/lazyledger/lazyledger-core/proto/tendermint/version"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
 	tmversion "github.com/lazyledger/lazyledger-core/version"
+	"github.com/stretchr/testify/require"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

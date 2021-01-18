@@ -3,8 +3,8 @@ package ibctesting_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	"github.com/stretchr/testify/require"
 
 	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
 	"github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"

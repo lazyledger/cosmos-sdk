@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/lazyledger/lazyledger-core/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/cosmos/cosmos-sdk/version"

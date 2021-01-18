@@ -14,13 +14,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
 	tmcfg "github.com/lazyledger/lazyledger-core/config"
 	tmflags "github.com/lazyledger/lazyledger-core/libs/cli/flags"
 	"github.com/lazyledger/lazyledger-core/libs/log"
 	tmrand "github.com/lazyledger/lazyledger-core/libs/rand"
 	"github.com/lazyledger/lazyledger-core/node"
 	tmclient "github.com/lazyledger/lazyledger-core/rpc/client"
+	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 	"google.golang.org/grpc"
 

@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/spf13/viper"
-	"github.com/stretchr/testify/require"
 	abci_server "github.com/lazyledger/lazyledger-core/abci/server"
 	"github.com/lazyledger/lazyledger-core/libs/cli"
 	"github.com/lazyledger/lazyledger-core/libs/log"
+	"github.com/spf13/viper"
+	"github.com/stretchr/testify/require"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

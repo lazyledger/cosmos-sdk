@@ -14,8 +14,8 @@ import (
 	gomock "github.com/golang/mock/gomock"
 	mux "github.com/gorilla/mux"
 	runtime "github.com/grpc-ecosystem/grpc-gateway/runtime"
-	cobra "github.com/spf13/cobra"
 	types1 "github.com/lazyledger/lazyledger-core/abci/types"
+	cobra "github.com/spf13/cobra"
 	reflect "reflect"
 )
 

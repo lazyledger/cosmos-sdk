@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/tendermint/crypto/bcrypt"
 	"github.com/lazyledger/lazyledger-core/crypto"
 	"github.com/lazyledger/lazyledger-core/crypto/armor"
 	"github.com/lazyledger/lazyledger-core/crypto/xsalsa20symmetric"
+	"github.com/tendermint/crypto/bcrypt"
 
 	"github.com/cosmos/cosmos-sdk/codec/legacy"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"path/filepath"
 
+	tmtypes "github.com/lazyledger/lazyledger-core/types"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	tmtypes "github.com/lazyledger/lazyledger-core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

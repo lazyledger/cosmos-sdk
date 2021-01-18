@@ -13,9 +13,9 @@ import (
 
 	"github.com/99designs/keyring"
 	bip39 "github.com/cosmos/go-bip39"
+	tmcrypto "github.com/lazyledger/lazyledger-core/crypto"
 	"github.com/pkg/errors"
 	"github.com/tendermint/crypto/bcrypt"
-	tmcrypto "github.com/lazyledger/lazyledger-core/crypto"
 
 	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/codec/legacy"

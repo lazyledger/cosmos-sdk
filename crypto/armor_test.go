@@ -7,11 +7,11 @@ import (
 	"io"
 	"testing"
 
-	"github.com/stretchr/testify/require"
-	"github.com/tendermint/crypto/bcrypt"
 	tmcrypto "github.com/lazyledger/lazyledger-core/crypto"
 	"github.com/lazyledger/lazyledger-core/crypto/armor"
 	"github.com/lazyledger/lazyledger-core/crypto/xsalsa20symmetric"
+	"github.com/stretchr/testify/require"
+	"github.com/tendermint/crypto/bcrypt"
 
 	"github.com/cosmos/cosmos-sdk/codec/legacy"
 	"github.com/cosmos/cosmos-sdk/crypto"

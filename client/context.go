@@ -8,8 +8,8 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pkg/errors"
 	rpcclient "github.com/lazyledger/lazyledger-core/rpc/client"
+	"github.com/pkg/errors"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

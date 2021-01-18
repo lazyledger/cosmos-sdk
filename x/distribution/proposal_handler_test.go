@@ -3,8 +3,8 @@ package distribution_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	tmproto "github.com/lazyledger/lazyledger-core/proto/tendermint/types"
+	"github.com/stretchr/testify/require"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	"github.com/cosmos/cosmos-sdk/simapp"

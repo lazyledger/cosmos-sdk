@@ -10,10 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/pkg/errors"
-	"github.com/spf13/cobra"
 	tmos "github.com/lazyledger/lazyledger-core/libs/os"
 	tmtypes "github.com/lazyledger/lazyledger-core/types"
+	"github.com/pkg/errors"
+	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
