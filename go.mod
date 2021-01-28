@@ -27,6 +27,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/lazyledger/lazyledger-core v0.0.0-20210115223437-eff282ad2592
+	github.com/lazyledger/smt v0.1.1
 	github.com/magiconair/properties v1.8.4
 	github.com/mattn/go-isatty v0.0.12
 	github.com/otiai10/copy v1.4.2
