@@ -15,7 +15,6 @@ import (
 	"github.com/lazyledger/lazyledger-core/node"
 	"github.com/lazyledger/lazyledger-core/p2p"
 	"github.com/lazyledger/lazyledger-core/proxy"
-	"github.com/lazyledger/optimint/rpcclient"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 
@@ -29,6 +28,7 @@ import (
 
 	opticonv "github.com/lazyledger/optimint/conv"
 	optinode "github.com/lazyledger/optimint/node"
+	"github.com/lazyledger/optimint/rpcclient"
 )
 
 // Tendermint full-node start flags

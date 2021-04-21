@@ -1,17 +1,20 @@
 package network
 
 import (
+	"context"
 	"encoding/json"
 	"io/ioutil"
 	"path/filepath"
 	"time"
 
+	opticonv "github.com/lazyledger/optimint/conv"
+	optinode "github.com/lazyledger/optimint/node"
+	"github.com/lazyledger/optimint/rpcclient"
+
 	tmos "github.com/lazyledger/lazyledger-core/libs/os"
 	"github.com/lazyledger/lazyledger-core/node"
 	"github.com/lazyledger/lazyledger-core/p2p"
-	pvm "github.com/lazyledger/lazyledger-core/privval"
 	"github.com/lazyledger/lazyledger-core/proxy"
-	"github.com/lazyledger/lazyledger-core/rpc/client/local"
 	"github.com/lazyledger/lazyledger-core/types"
 	tmtime "github.com/lazyledger/lazyledger-core/types/time"
 
@@ -35,34 +38,41 @@ func startInProcess(cfg Config, val *Validator) error {
 
 	app := cfg.AppConstructor(*val)
 
-	pvFile, err := pvm.LoadOrGenFilePV(tmCfg.PrivValidatorKeyFile(), tmCfg.PrivValidatorStateFile())
+	genDocProvider := node.DefaultGenesisDocProviderFunc(tmCfg)
+	// node key in optimint format
+	oNodeKey, err := opticonv.GetNodeKey(&nodeKey)
 	if err != nil {
 		return err
 	}
-
-	genDocProvider := node.DefaultGenesisDocProviderFunc(tmCfg)
-	tmNode, err := node.NewNode(
-		tmCfg,
-		pvFile,
-		nodeKey,
+	genesis, err := genDocProvider()
+	if err != nil {
+		return err
+	}
+	oConf := opticonv.GetNodeConfig(tmCfg)
+	err = opticonv.TranslateAddresses(&oConf)
+	if err != nil {
+		return err
+	}
+	optiNode, err := optinode.NewNode(
+		context.Background(),
+		oConf,
+		oNodeKey,
 		proxy.NewLocalClientCreator(app),
-		genDocProvider,
-		node.DefaultDBProvider,
-		node.DefaultMetricsProvider(tmCfg.Instrumentation),
-		logger.With("module", val.Moniker),
+		genesis,
+		logger,
 	)
 	if err != nil {
 		return err
 	}
 
-	if err := tmNode.Start(); err != nil {
+	if err := optiNode.Start(); err != nil {
 		return err
 	}
 
-	val.tmNode = tmNode
+	val.tmNode = optiNode
 
 	if val.RPCAddress != "" {
-		val.RPCClient = local.New(tmNode)
+		val.RPCClient = rpcclient.NewLocal(optiNode)
 	}
 
 	// We'll need a RPC client if the validator exposes a gRPC or REST endpoint.

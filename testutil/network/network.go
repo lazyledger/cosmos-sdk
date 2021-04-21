@@ -18,7 +18,6 @@ import (
 	tmflags "github.com/lazyledger/lazyledger-core/libs/cli/flags"
 	"github.com/lazyledger/lazyledger-core/libs/log"
 	tmrand "github.com/lazyledger/lazyledger-core/libs/rand"
-	"github.com/lazyledger/lazyledger-core/node"
 	tmclient "github.com/lazyledger/lazyledger-core/rpc/client"
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
@@ -44,6 +43,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/cosmos/cosmos-sdk/x/genutil"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+
+	optinode "github.com/lazyledger/optimint/node"
 )
 
 // package-wide network lock to only allow one test network at a time
@@ -157,7 +158,7 @@ type (
 		ValAddress sdk.ValAddress
 		RPCClient  tmclient.Client
 
-		tmNode *node.Node
+		tmNode *optinode.Node
 		api    *api.Server
 		grpc   *grpc.Server
 	}
